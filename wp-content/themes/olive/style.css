@@ -1,0 +1,307 @@
+/* 
+Theme Name: Oliver
+Text Domain: Oliver
+Version: 1.0
+Description: A theme that showcases your artwork or photography in a visually appealing way.
+Tags: blog, theme, responsive, beautiful
+Author Name: Uzoma Chinaza
+Author URI: https://oliveuzoma.com
+
+*/
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+#header{
+    
+    height: 100px;
+    width: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#icon {
+    color: aliceblue;
+    font-size: 20px;
+    word-spacing: 10px;
+    margin-left: 40px
+
+}
+#logo {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 90px;
+}
+
+#contact {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    color: #E5BF4A;
+    border: 1px solid #E5BF4A;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 40px;
+}
+.button:hover{
+    color:aliceblue;
+    background-color: #E5BF4A;
+}
+#navigation {
+    width:750px;
+    margin:0 auto;
+    list-style:none;
+    }
+ #navigation li {
+    float:left;
+    }
+ #navigation a {
+    display:block;
+    text-align:center;
+    width:120px; /* fixed width */
+    text-decoration:none; 
+    font-size: 15px;
+    padding: -10px;
+    color: white;
+}
+
+.container {
+    background-image: url('./../images/h1_hero1.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 80px;
+}
+    
+a:hover{
+    color: burlywood;
+}
+
+.caption {
+    margin-left: 150px;
+    padding-top: 150px;
+}
+.caption h1 {
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 41px;
+    line-height: 80px;
+
+}
+
+.caption a {
+background-color: #E5BF4A;
+padding: 20px;
+padding-left: 30px;
+padding-right: 30px;
+text-decoration: none;
+color: #0A0A0A !important;
+}
+
+#section3 {
+    margin: 100px 0;
+}
+#section3 line{
+    position: relative;
+    content: "";
+    width: 100px;
+    height: 2px;
+    z-index: 1;
+    background-color: #E5BF4A;
+
+}
+
+#section3 h2 {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+#section3 p {
+color: #E5BF4A;
+text-align: center;
+font-size: 30px;
+padding: 10px;
+}
+
+#section4 {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    margin-left: 70px;
+    font-family: 'Poiret One', cursive;
+}
+#section4 h3{
+color: #E5BF4A;
+    font-family: 'Poiret One', cursive;
+}
+
+#section4 p{
+    
+    font-family: 'Poiret One', cursive;
+
+
+}
+
+.sec3-left-col3{
+    width: 900px;
+    margin-left: 60px;
+    margin-right: 70;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family: 'Poiret One', cursive;
+
+}
+
+.sec3-right-col {
+    display: flex;
+    width: 80%;
+    margin-right: 80px;
+    padding-left:30px
+
+}
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cs-hidden{
+    display: flex;
+    align-items: flex-start;
+    place-items: center;
+    overflow: scroll;
+}
+
+.slider-box {
+    width: 430px;
+    margin: 0 10px;
+}
+
+.img-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+/*
+.type{
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    color: pink;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+
+}
+*/
+
+.overlay {
+    width: 100%;
+    background-color: #E5BF4A;
+    height: 50px;
+    align-items: center;
+    display: none;
+}
+
+.overlay a{
+    color: #0A0A0A;
+    padding-left: 120px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 300;
+
+}
+
+.overlay a:hover{
+    color: aliceblue;
+}
+
+.img-slide:hover .overlay {
+    visibility: visible;
+}
+
+.overlay:hover{
+    visibility: visible;
+}
+
+.box-detail {
+    width: 100%;
+    padding: 10px 10px;
+    font-family: 'Poiret One', cursive;
+}
+
+.box-detail p{
+    color: #E5BF4A;
+
+}
+.box-detail h5{
+    color: white;
+}
+
+#section5 {
+    background-image: url('./../images/video-bg.jpg');
+    height: 600px;
+    width: 75%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-area{
+  font-size: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  ;  
+}
+
+.video-area i{
+    /* display: flex;
+    text-align: center;
+    margin-left: 600px; */
+color:#E5BF4A;
+    position: absolute;
+margin-bottom: 50px;
+margin-top: 300px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+
+
