@@ -1,0 +1,65 @@
+version:  '3.9'
+
+services:
+  wordpress: 
+    image: wordpress
+    restart: always
+    ports:
+      - 80:80
+    
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: olive
+      WORDPRESS_DB_PASSWORD: jin-jin
+      WORDPRESS_DB_NAME: petsnus
+      WORDPRESS_TABLE_PREFIX: wp_
+      WP_CLI_ALLOW_ROOT: true
+    volumes:
+      - ./:/var/www/html:rw,cached
+      - ./custom.ini:/usr/local/etc/php/conf.d/php.ini
+      - .htaccess:/var/www/html/.htaccess
+
+    depends_on:
+      - db
+
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+
+    environment:
+      MYSQL_DATABASE: petsnus
+      MYSQL_USER: olive
+      MYSQL_PASSWORD: jin-jin
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+  
+    volumes:
+    - db:/var/lib/mysql
+
+  wp:
+    image: wordpress:cli
+    depends_on:
+      - db
+      - wordpress
+    volumes:
+      - ./:/var/www/html
+      - .htaccess:/var/www/html/.htaccess
+      - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
+
+    links:
+      - db
+      - wordpress
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: olive
+      WORDPRESS_DB_PASSWORD: jin-jin
+      WORDPRESS_DB_NAME: petsnus
+      WORDPRESS_DEBUG: 1
+    command: "--info"
+
+
+volumes:
+  wordpress:
+  db:
+
