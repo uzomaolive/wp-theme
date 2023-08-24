@@ -55,3 +55,14 @@
 
 
         </div>
+
+        <main class="container">
+        <div class="caption">
+            <h1>Healthy Made<br> Delicious Cake
+
+            </h1>
+
+            <a href="#">ORDER NOW
+            </a>
+        </div>
+    </main>

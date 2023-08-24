@@ -2,7 +2,7 @@
 
 function olivercakesite_theme_support(){
 // Adds dynamic title tag support
-add_theme_support('title-tag');
+     add_theme_support('title-tag');
 }
 
 add_action('after_theme_setup','olivercakesite_theme_support');
