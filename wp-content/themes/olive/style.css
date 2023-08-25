@@ -18,7 +18,7 @@ Author URI: https://oliveuzoma.com
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
 }
@@ -93,8 +93,17 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /*
     height: 100vh;
     margin-top: 80px;
+    */
+}
+
+.heading {
+    color: white;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
 }
     
 a:hover{
@@ -102,8 +111,10 @@ a:hover{
 }
 
 .caption {
-    margin-left: 150px;
-    padding-top: 150px;
+   /* margin-left: 150px;
+    padding-top: 100px;
+    */
+    text-align: center;
 }
 .caption h1 {
     color: white;
@@ -112,9 +123,10 @@ a:hover{
     font-weight: 400;
     margin-bottom: 41px;
     line-height: 80px;
+    text-align: center;
 
 }
-
+/*
 .caption a {
 background-color: #E5BF4A;
 padding: 20px;
@@ -123,7 +135,7 @@ padding-right: 30px;
 text-decoration: none;
 color: #0A0A0A !important;
 }
-
+*/
 #section3 {
     margin: 100px 0;
 }

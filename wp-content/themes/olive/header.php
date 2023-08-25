@@ -56,14 +56,9 @@
 
         </div>
 
-        <main class="container">
+        <header class="container">
         <div class="caption">
-            <h1>Healthy Made<br> Delicious Cake
-
-            </h1>
-
-            <a href="#">ORDER NOW
-            </a>
+            <h1 class="caption"><?php the_title(); ?></h1>
         </div>
-    </main>
+    </header>
 </section>

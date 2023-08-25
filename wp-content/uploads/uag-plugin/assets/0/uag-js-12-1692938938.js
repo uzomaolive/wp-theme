@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '.uagb-block-78edd8d1' );
+document.addEventListener("DOMContentLoaded", function(){ var ssLinksParent = document.querySelector( '.uagb-block-6c185516' );
 ssLinksParent.addEventListener( 'keyup', function ( e ) {
 var link = e.target.closest( '.uagb-ss__link' );
 if ( link && e.keyCode === 13 ) {
@@ -27,7 +27,7 @@ if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
 }
 window.open( request_url, target );
 }
-var ssLinksParent = document.querySelector( '.uagb-block-0e764b1b' );
+var ssLinksParent = document.querySelector( '.uagb-block-d331e4b0' );
 ssLinksParent.addEventListener( 'keyup', function ( e ) {
 var link = e.target.closest( '.uagb-ss__link' );
 if ( link && e.keyCode === 13 ) {
@@ -56,7 +56,7 @@ if ( social_url.indexOf("/pin/create/link/?url=") !== -1 ) {
 }
 window.open( request_url, target );
 }
-var ssLinksParent = document.querySelector( '.uagb-block-813d3708' );
+var ssLinksParent = document.querySelector( '.uagb-block-9ae9e6bf' );
 ssLinksParent.addEventListener( 'keyup', function ( e ) {
 var link = e.target.closest( '.uagb-ss__link' );
 if ( link && e.keyCode === 13 ) {
