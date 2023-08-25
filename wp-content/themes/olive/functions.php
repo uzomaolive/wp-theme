@@ -8,6 +8,19 @@ function olivercakesite_theme_support(){
 add_action('after_theme_setup','olivercakesite_theme_support');
 
 
+function olivercakesite_menus(){
+    $locations = array(
+        'Primary' => "Desktop Left Sidebar",
+        'footer' => "Footer Menu Items"
+
+    );
+
+    register_nav_menus($locations);
+
+}
+
+add_action('init', 'olivercakesite_menus');
+
 function olivercakesite_styles(){
 
     $version = wp_get_theme()->get( 'Version' );
